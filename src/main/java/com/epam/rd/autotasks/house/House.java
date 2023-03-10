@@ -1,17 +1,11 @@
 package com.epam.rd.autotasks.house;
 
-import com.epam.rd.autotasks.residents.dogs.Dog;
-
 import java.util.ArrayList;
 import java.util.List;
 
 public class House <T> {
-
     private final List <T> residents = new ArrayList<>();
-
-    public void enter (T resident) { residents.add(resident);
-    }
-
+    public void enter (T resident) { residents.add(resident); }
     @Override
     public String toString() {
         StringBuilder builder = new StringBuilder();
